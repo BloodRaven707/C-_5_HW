@@ -3,9 +3,12 @@
     class C_5
     {
         /// <summary>
-        /// Принимает: длинну массива, минимальное и максимальное значение элемента массива
-        /// Возвращает: сгенерированный массив из вещественных чисел
+        /// Генератор массива указанной длинны в диапозоне значений
         /// </summary>
+        /// <param name="arrayLength">Число элементов для генерации</param>
+        /// <param name="minRange">Минимальное значение элемента массива</param>
+        /// <param name="maxRange">Максимальное значение элемента массива</param>
+        /// <returns>Cгенерированный массив из вещественных чисел</returns>
         public static double[] RandomDoubleArrayGenarate(int arrayLength, double minRange, double maxRange) {
             Random rand = new Random();
             double[] someIntArray = new double[arrayLength];
